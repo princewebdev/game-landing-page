@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- linking main css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <header> <!-- Header start-->
@@ -22,16 +24,21 @@
             <div class="logo"> <!--logo-->
                 <h2><a href="index.html">Hancok</a></h2>
             </div>
-            <div class="menubar"> <!--menu-->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Tornament</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="toggle-menu">
+                <button id="humberger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menubar"> <!--menu-->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Tornament</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="menu-icon"> <!--menu icon-->
                 <i class="fa-solid fa-globe"></i>
@@ -685,50 +692,12 @@
     </div>
 </footer>
 
-
+<!-- jQurey slim min ver -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- swipper js linking -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-    loop: true,
-    slidesPerView: 1,
-    autoplay: {
-        delay: 1000, // Autoplay delay in milliseconds
-        disableOnInteraction: false, // Allow manual navigation while autoplay is active
-        },
-});
-// Init popular swipper
-var swiper = new Swiper(".popularSwipper", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    loop: true,
-    autoplay: {
-        delay: 3000, // Autoplay delay in milliseconds
-        disableOnInteraction: false, // Allow manual navigation while autoplay is active
-        },
-});
-
-// Initialize Swiper 
-var swiper = new Swiper(".productSwipper", {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    loop: true,
-    autoplay: {
-        delay: 1000, // Autoplay delay in milliseconds
-        disableOnInteraction: false, // Allow manual navigation while autoplay is active
-        },
-});
-</script>
+<!-- main script -->
+<script src="js/script.js"></script>
 </body>
 </html>
 

@@ -93,6 +93,9 @@ nav{
     border-radius: 50%;
 }
 /* nav */
+.menubar{
+    z-index: 2;
+}
 .menubar ul li{
     display: inline-block;
 }
@@ -105,6 +108,9 @@ nav{
     &:hover{
         color: var(--hover-color);
     }
+}
+button#humberger{
+    display: none;
 }
 /* menu icon */
 .menu-icon{
@@ -238,6 +244,9 @@ section.about{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.81px;
+}
+.about-right img {
+    width: 100%;
 }
 .about-left ul li i{
     color: var(--hover-color);
@@ -566,7 +575,9 @@ h3.fav-game-title {
     grid-template-columns: 70% 20% 10%;
     column-gap: 20px;
 }
-
+.fav-game-slider{
+    overflow: hidden;
+}
 .fav-game-content h4 {
     color: var(--hover-color);
     font-family: var(--secondary-font);
