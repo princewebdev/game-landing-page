@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 1000, // Autoplay delay in milliseconds
         disableOnInteraction: false, // Allow manual navigation while autoplay is active
-        },
+    },
 });
 // Init popular swipper
 var swiper = new Swiper(".popularSwipper", {
@@ -21,7 +21,8 @@ var swiper = new Swiper(".popularSwipper", {
     autoplay: {
         delay: 3000, // Autoplay delay in milliseconds
         disableOnInteraction: false, // Allow manual navigation while autoplay is active
-        },
+    },
+
 });
 
 // Initialize Swiper 
@@ -36,7 +37,31 @@ var swiper = new Swiper(".productSwipper", {
     autoplay: {
         delay: 1000, // Autoplay delay in milliseconds
         disableOnInteraction: false, // Allow manual navigation while autoplay is active
+    },
+    breakpoints: {
+        // Responsive breakpoints
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
         },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 18,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+    },
+        
 });
 
 // jqery start

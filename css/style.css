@@ -51,6 +51,7 @@ li{
     letter-spacing: 2.66px;
     position: relative;
     text-align: right;
+    margin-bottom: 20px;
 }
 .title-right::after{
     content: "";
